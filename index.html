@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoReview Hub - Your Ultimate Car Review Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-car-side"></i>
+                    <span>AutoReview Hub</span>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#compare">Compare</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </nav>
+                <div class="search-box">
+                    <input type="text" placeholder="Search cars...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn-login" onclick="openLoginModal()">Login</button>
+                    <button class="btn-signup">Sign Up</button>
+                </div>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container with Sidebar Layout -->
+    <div class="main-container">
+        <!-- Sidebar for Social Media -->
+        <aside class="sidebar">
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="sidebar-stats">
+                <h3>Site Stats</h3>
+                <div class="stat-item">
+                    <span class="stat-number">1,250+</span>
+                    <span class="stat-label">Car Reviews</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Video Reviews</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Monthly Visitors</span>
+                </div>
+            </div>
+            <div class="sidebar-ads">
+                <div class="ad-banner">
+                    <span>Advertisement</span>
+                    <p>Your Ad Here</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to AutoReview Hub</h1>
+                    <p>Your trusted source for comprehensive car reviews, expert analysis, and exclusive video content</p>
+                    <div class="hero-buttons">
+                        <a href="#reviews" class="btn-primary">Browse Reviews</a>
+                        <a href="#videos" class="btn-secondary">Watch Videos</a>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="reviews" class="featured-reviews">
+                <h2 class="section-title">Featured Car Reviews</h2>
+                <div class="reviews-grid">
+                    
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=400&h=250&fit=crop" alt="BMW M4 Competition">
+                            <span class="review-badge">Featured</span>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="review-content">
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5/5</span>
+                            </div>
+                            <h3>2024 BMW M4 Competition Review</h3>
+                            <p>The ultimate driving machine gets even better with enhanced performance and luxury features.</p>
+                            <div class="review-meta">
+                                <span><i class="fas fa-user"></i> John Smith</span>
+                                <span><i class="far fa-calendar"></i> Dec 15, 2024</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Review <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=250&fit=crop" alt="Chevrolet Corvette">
+                            <span class="review-badge new">New</span>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="review-content">
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0/5</span>
+                            </div>
+                            <h3>2024 Chevrolet Corvette Z06</h3>
+                            <p>American supercar perfection with track-focused performance and stunning design.</p>
+                            <div class="review-meta">
+                                <span><i class="fas fa-user"></i> Sarah Johnson</span>
+                                <span><i class="far fa-calendar"></i> Dec 12, 2024</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Review <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 3 -->
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400&h=250&fit=crop" alt="Porsche 911">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="review-content">
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0/5</span>
+                            </div>
+                            <h3>2024 Porsche 911 Carrera S</h3>
+                            <p>The iconic sports car continues to set benchmarks in performance and precision.</p>
+                            <div class="review-meta">
+                                <span><i class="fas fa-user"></i> Mike Davis</span>
+                                <span><i class="far fa-calendar"></i> Dec 10, 2024</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Review <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 4 -->
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400&h=250&fit=crop" alt="Mercedes AMG GT">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="review-content">
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.5/5</span>
+                            </div>
+                            <h3>2024 Mercedes-AMG GT Coupe</h3>
+                            <p>German engineering meets aggressive styling in this stunning grand tourer.</p>
+                            <div class="review-meta">
+                                <span><i class="fas fa-user"></i> Emily Chen</span>
+                                <span><i class="far fa-calendar"></i> Dec 8, 2024</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Review <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Video Reviews Section -->
+            <section id="videos" class="video-reviews">
+                <h2 class="section-title">Video Reviews</h2>
+                <div class="video-grid">
+                    <!-- Video 1 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQuPPGwtfobtphn2JnZfRLJU_ELJXj4mEweQ&s" alt="Tesla Model S Plaid">
+                            <div class="video-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <span class="video-duration">15:32</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>Tesla Model Y - Full Review</h4>
+                            <p>An in-depth look at the fastest production car in the world.</p>
+                            <div class="video-stats">
+                                <span><i class="far fa-eye"></i> 1.2M views</span>
+                                <span><i class="far fa-thumbs-up"></i> 45K likes</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=gQ92igDGBHQ" target="_blank" class="watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRORvzNODhkJ-OLYYpEFadGibKU4FYe5gvaDA&s" alt="Porsche 911 Turbo">
+                            <div class="video-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <span class="video-duration">22:15</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>Porsche 911 Turbo S Track Test</h4>
+                            <p>Pushing the limits on the track with Porsche's flagship 911.</p>
+                            <div class="video-stats">
+                                <span><i class="far fa-eye"></i> 890K views</span>
+                                <span><i class="far fa-thumbs-up"></i> 32K likes</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=DZAdVY9kKbc" target="_blank" class="watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSdlb80IVxkyjnGMpRAwXmxjmgoff_AeRMQ&s" alt="Lamborghini Huracan">
+                            <div class="video-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <span class="video-duration">18:45</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>Lamborghini Huracan STO Soundcheck</h4>
+                            <p>Experience the symphony of the naturally aspirated V10 engine.</p>
+                            <div class="video-stats">
+                                <span><i class="far fa-eye"></i> 2.1M views</span>
+                                <span><i class="far fa-thumbs-up"></i> 89K likes</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=GhDke_HwurA" target="_blank" class="watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Car Categories -->
+            <section class="car-categories">
+                <h2 class="section-title">Browse by Category</h2>
+                <div class="category-grid">
+                    <a href="#" class="category-card">
+                        <i class="fas fa-car"></i>
+                        <span>Sedans</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <i class="fas fa-truck-pickup"></i>
+                        <span>SUVs</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <i class="fas fa-car-side"></i>
+                        <span>Sports Cars</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <i class="fas fa-truck"></i>
+                        <span>Trucks</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <i class="fas fa-leaf"></i>
+                        <span>Electric</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <i class="fas fa-shuttle-space"></i>
+                        <span>Luxury</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Compare Section -->
+            <section id="compare" class="compare-section">
+                <h2 class="section-title">Quick Comparison</h2>
+                <div class="compare-table-wrapper">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>BMW M4</th>
+                                <th>Mercedes C63</th>
+                                <th>Audi RS5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Engine</td>
+                                <td>3.0L Twin-Turbo I6</td>
+                                <td>4.0L Twin-Turbo V8</td>
+                                <td>2.9L Twin-Turbo V6</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>473 hp / 550 lb-ft</td>
+                                <td>469 hp / 479 lb-ft</td>
+                                <td>444 hp / 443 lb-ft</td>
+                            </tr>
+                            <tr>
+                                <td>0-60 mph</td>
+                                <td>3.8 seconds</td>
+                                <td>3.8 seconds</td>
+                                <td>3.7 seconds</td>
+                            </tr>
+                            <tr>
+                                <td>Top Speed</td>
+                                <td>155 mph</td>
+                                <td>180 mph</td>
+                                <td>174 mph</td>
+                            </tr>
+                            <tr>
+                                <td>Base Price</td>
+                                <td>$74,300</td>
+                                <td>$79,500</td>
+                                <td>$75,900</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section id="news" class="news-section">
+                <h2 class="section-title">Latest Automotive News</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&h=200&fit=crop" alt="EV News">
+                        <div class="news-content">
+                            <span class="news-category">Electric</span>
+                            <h4>2025 EV Tax Credit Changes Announced</h4>
+                            <p>New regulations will affect EV buyers starting next year.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=200&fit=crop" alt="Performance News">
+                        <div class="news-content">
+                            <span class="news-category">Performance</span>
+                            <h4>New Hypercar Records Broken at Nürburgring</h4>
+                            <p>Production car lap record shattered by mystery prototype.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop" alt="Industry News">
+                        <div class="news-content">
+                            <span class="news-category">Industry</span>
+                            <h4>Major Automakers Announce EV Partnership</h4>
+                            <p>Competitors join forces to accelerate EV development.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-car-side"></i> AutoReview Hub</h3>
+                    <p>Your trusted source for comprehensive car reviews, expert analysis, and exclusive video content since 2020.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#reviews">Car Reviews</a></li>
+                        <li><a href="#videos">Video Reviews</a></li>
+                        <li><a href="#compare">Compare Cars</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Car Brands</h3>
+                    <ul>
+                        <li><a href="#">BMW</a></li>
+                        <li><a href="#">Mercedes-Benz</a></li>
+                        <li><a href="#">Audi</a></li>
+                        <li><a href="#">Porsche</a></li>
+                        <li><a href="#">Tesla</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get the latest reviews and news delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoReview Hub. All rights reserved. | Privacy Policy | Terms of Service | Contact Us</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-user-circle"></i>
+                <h2>Welcome Back</h2>
+                <p>Login to access your account</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div class="divider">
+                    <span>or continue with</span>
+                </div>
+                <div class="social-login">
+                    <button type="button" class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                    <button type="button" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                </div>
+                <p class="register-link">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
